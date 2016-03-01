@@ -13,6 +13,9 @@ urls = (
 app = web.application(urls, globals())
 
 class list_users:
+    """
+    Listed users
+    """
      def GET(self):
           output = 'users:[';
           for child in root:
@@ -22,6 +25,9 @@ class list_users:
           return output
 
 class get_user:
+    """
+    Get users data
+    """
      def GET(self, user):
           for child in root:
                if child.attrib['id'] == user:
