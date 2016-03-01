@@ -21,3 +21,6 @@ URL:
 The users data is currently stored on user_data.xml
 
 Sample: `<user id="1" name="Rocky" age="38"/>`
+
+## License
+The repo is licensed under MIT.
