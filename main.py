@@ -16,7 +16,7 @@ class list_users:
     """
     Listed users
     """
-     def GET(self):
+    def GET(self):
           output = 'users:[';
           for child in root:
                print 'child', child.tag, child.attrib
@@ -28,7 +28,7 @@ class get_user:
     """
     Get users data
     """
-     def GET(self, user):
+    def GET(self, user):
           for child in root:
                if child.attrib['id'] == user:
                     return str(child.attrib)
